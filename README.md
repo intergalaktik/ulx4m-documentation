@@ -22,6 +22,10 @@ Successor of [ULX2S](http://github.com/emard/ulx2s).
 
 ![GPIO](/pic/gpio.png)
 
+On this version SD_CARD is aslo connected to GPIO pins, so we can share it with ESP32 as on ULX3S.
+
+On this version FPGA JTAG pins are connected to some GPIO pins so you will not be able to use them as GPIOs, but you can acces JTAG over GPIO.
+
 If Waveshare IO board is used it can be powered only from USB-C.
 
 If you are using Raspberry IO board then you will need 12V DC input as micro USB does not have 5V connected.

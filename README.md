@@ -20,6 +20,14 @@ Successor of [ULX2S](http://github.com/emard/ulx2s).
 
 ![Rawspberry IO](/pic/ULX4M-LD-V2-raspberry_IO.jpg)
 
+![GPIO](/pic/gpio.png)
+
+If Waveshare IO board is used it can be powered only from USB-C.
+
+If you are using Raspberry IO board then you will need 12V DC input as micro USB does not have 5V connected.
+There is one wire hack that can provide 5V from USB to the board.
+If this hack is used USB HOST will not work as it will disable HUB chip.
+
 ### ULX4M-LD v2 schematics
 
 https://github.com/intergalaktik/ulx4m/blob/ulx4m-ld/doc/schematics.pdf

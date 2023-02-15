@@ -40,6 +40,8 @@ https://github.com/emard/had2019-playground/tree/master/projects/bootloader
 
 https://github.com/goran-mahovlic/mipi-csi-2
 
+https://github.com/hdl4fpga/hdl4fpga
+
 ### ULX4M-LS v1 bitstreams
 
 https://github.com/lawrie/ulx4m_bitstreams

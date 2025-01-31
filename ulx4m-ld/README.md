@@ -64,7 +64,7 @@ USB (bootloader)
 
 ## Electrical and mechanical specifications
 
-![dimensions](/pic/ulx4m-ld-dimensions.png)
+![dimensions](../pic/ulx4m-ld-dimensions.png)
 
 ## Pinout
 
@@ -72,13 +72,13 @@ USB (bootloader)
 
 ## ULX4M-LD description and instructions
 
-![LD short desc](/pic/ulx4m-ld-short-desc.png)
+![LD short desc](../pic/ulx4m-ld-short-desc.png)
 
-![Waveshare short desc](/pic/Waveshare-ulx4m-ld-v2-explain.png)
+![Waveshare short desc](../pic/Waveshare-ulx4m-ld-v2-explain.png)
 
-![Rawspberry IO](/pic/ULX4M-LD-V2-raspberry_IO.jpg)
+![Rawspberry IO](../pic/ULX4M-LD-V2-raspberry_IO.jpg)
 
-![GPIO](/pic/gpio.png)
+![GPIO](../pic/gpio.png)
 
 On this version SD_CARD is aslo connected to GPIO pins, so we can share it with ESP32 as on ULX3S.
 

@@ -69,7 +69,7 @@ USB (bootloader)
 
 ## Electrical and mechanical specifications
 
-![dimensions](../pic/ulx4m-ld-dimensions.png)
+![dimensions](../pic/ulx4m-ls-dimensions.png)
 
 ## Pinout
 

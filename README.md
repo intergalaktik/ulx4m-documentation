@@ -15,9 +15,9 @@ Successor of [ULX2S](http://github.com/emard/ulx2s).
 ULX4M is a system on a module (SoM) board that can be used on CM4 compatible base board or as a standalone board.
 ULX4M has two versions 
 
-#### ULX4M-LS (Lattice + SDRAM version) [README](https://github.com/intergalaktik/ulx4m-documentation/tree/main/ulx4m-ls)
+#### ULX4M-LS (Lattice + SDRAM version) [USER MANUAL](https://github.com/intergalaktik/ulx4m-documentation/tree/main/ulx4m-ls)
 
-#### ULX4M-LD (Lattice + DDR3 version) [README](https://github.com/intergalaktik/ulx4m-documentation/tree/main/ulx4m-ld)
+#### ULX4M-LD (Lattice + DDR3 version) [USER MANUAL](https://github.com/intergalaktik/ulx4m-documentation/tree/main/ulx4m-ld)
 
 
 ### ULX4M repositories

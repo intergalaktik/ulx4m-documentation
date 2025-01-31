@@ -6,7 +6,7 @@ SPDX-License-Identifier: CERN-OHL-S-2.0
 
 # ULX4M-LD (Lattice + DDR3)
 
-![ulx4m-ld](../pic/ulx4m-ld.png)
+![ulx4m-ld](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/ulx4m-ld.png)
 
 ## Introduction
 
@@ -66,7 +66,7 @@ USB (bootloader)
 
 ## Electrical and mechanical specifications
 
-![dimensions](../pic/ulx4m-ld-dimensions.png)
+![dimensions](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/ulx4m-ld-dimensions.png)
 
 ## Pinout
 
@@ -74,13 +74,13 @@ USB (bootloader)
 
 ## ULX4M-LD description and instructions
 
-![LD short desc](../pic/ulx4m-ld-short-desc.png)
+![LD short desc](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/ulx4m-ld-short-desc.png)
 
-![Waveshare short desc](../pic/Waveshare-ulx4m-ld-v2-explain.png)
+![Waveshare short desc](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/Waveshare-ulx4m-ld-v2-explain.png)
 
-![Rawspberry IO](../pic/ULX4M-LD-V2-raspberry_IO.jpg)
+![Rawspberry IO](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/ULX4M-LD-V2-raspberry_IO.jpg)
 
-![GPIO](../pic/gpio.png)
+![GPIO](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/gpio.png)
 
 On this version SD_CARD is aslo connected to GPIO pins, so we can share it with ESP32 as on ULX3S.
 

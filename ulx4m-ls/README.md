@@ -69,7 +69,7 @@ USB (bootloader)
 
 ## Electrical and mechanical specifications
 
-![dimensions](../pic/ulx4m-ls-dimensions.png)
+![dimensions](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/ulx4m-ls-dimensions.png)
 
 ## Pinout
 
@@ -82,15 +82,15 @@ Missing
 ## ULX4M-LS description and instructions
 
 NEEDS UPDATE!!!
-![LD short desc](../pic/ulx4m-ls-short-desc.png)
+![LD short desc](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/ulx4m-ls-short-desc.png)
 
 NEEDS UPDATE!!!
-![Waveshare short desc](../pic/Waveshare-ulx4m-ls-v2-explain.png)
+![Waveshare short desc](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/Waveshare-ulx4m-ls-v2-explain.png)
 
-![Rawspberry IO](../pic/ulx4m-ls-v003-rpi-io_03_crop.jpg)
+![Rawspberry IO](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/ulx4m-ls-v003-rpi-io_03_crop.jpg)
 
 NEEDS UPDATE!!!
-![GPIO](../pic/ls-gpio.png)
+![GPIO](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/ls-gpio.png)
 
 On this version SD_CARD is aslo connected to GPIO pins, so we can share it with ESP32 as on ULX3S.
 

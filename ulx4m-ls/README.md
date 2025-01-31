@@ -6,13 +6,11 @@ SPDX-License-Identifier: CERN-OHL-S-2.0
 
 # ULX4M-LS (Lattice + SDRAM)
 
-![ulx4m-ls](../pic/ulx4m-ls.png)
+![ulx4m-ls](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/ulx4m-ls.png)
 
 ## Introduction
 
 ULX4M-LS (Lattice + SDRAM) is a system on a module (SoM) board that can be used on CM4 compatible base board or as a standalone board.
-
-## Features
 
 ## ULX4M-LS (Lattice + SDRAM)
 
@@ -36,7 +34,7 @@ JTAG connected to GPIO (programming with FTDI or ESP32)
 
 USB (bootloader)
 
-### Periferals
+### Periferals/ 
 
 - [x] 2 lane CSI camera port  CAM0 and CAM1
 
@@ -73,7 +71,11 @@ USB (bootloader)
 
 ## Pinout
 
-## Power
+## Power 
+
+ULX4M requires at least 500mA to function safely.
+5V power supply can be provided over USB port or over GPIO.
+3.3V OUTPUT from ULX3S can handle up to 1A if apropriate input power is used.
 
 ## ULX4M-LS description and instructions
 
@@ -105,6 +107,10 @@ If this hack is used USB HOST will not work as it will disable HUB chip.
 ### ULX4M-LS schematics
 
 https://github.com/intergalaktik/ulx4m/blob/ulx4m-ls/doc/schematics.pdf
+
+## ULX4M-LS design files
+
+https://github.com/intergalaktik/ulx4m/tree/ulx4m-ls
 
 ### ULX4M-LS LPF
 
@@ -207,3 +213,22 @@ ISSI FLASH should be always safe and reversible.
 Winbond FLASH protection can set non-reversible
 OTP status register lock bit and in that case,
 there is no known way to remove protection.
+
+# Chat and support
+
+Discord chanel
+
+  - https://discord.gg/qwMUk6W (problems/question/general chat)
+
+## INSTRUCTIONS FOR SAFE USE
+
+This product shall be connected to an computer/laptop USB port or external power supply rated at 5V DC with maximum current of 2A.
+Any external power supply used with ULX4M shall comply with relevant regulations and standards applicable in the country of intended use.
+This product should be operated in a well ventilated environment and should not be covered.
+This product should be placed on a stable, flat, non-conductive surface in use and should not be contacted by conductive items. 
+The connection of unapproved devices to any receptacle may affect compliance or results in damage to the unit and invalidate the warranty. Do not expose it to water, moisture or place on a conductive surface whilst in operation
+Do not expose it to heat from any source; ULX4M is designed for reliable operation at normal ambient room temperatures.
+Take care whilst handling to avoid mechanical or electrical damage to the printed circuit board and connectors.
+Avoid handling ULX4M while it is powered. Only handle by the edges to minimize the risk of electrostatic discharge damage.
+All peripherals used with ULX4M should comply with relevant standards for the country of use and be marked accordingly to ensure that safety and performance requirements are met.
+ULX4M requires at least 500mA to function safely.

@@ -12,8 +12,6 @@ SPDX-License-Identifier: CERN-OHL-S-2.0
 
 ULX4M-LD (Lattice + DDR3) is a system on a module (SoM) board that can be used on CM4 compatible base board or as a standalone board.
 
-## Features
-
 ## ULX4M-LD (Lattice + DDR3)
 
 FPGA: Lattice ECP5 [LFE5U-85F-6BG381C](http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/ECP5/FPGA-DS-02012.pdf?document_id=50461) (12/25/45/85K LUT)
@@ -70,7 +68,13 @@ USB (bootloader)
 
 ## Pinout
 
+![GPIO](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/gpio.png)
+
 ## Power
+
+ULX4M requires at least 500mA to function safely.
+5V power supply can be provided over USB port or over GPIO.
+3.3V OUTPUT from ULX3S can handle up to 1A if apropriate input power is used.
 
 ## ULX4M-LD description and instructions
 
@@ -79,8 +83,6 @@ USB (bootloader)
 ![Waveshare short desc](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/Waveshare-ulx4m-ld-v2-explain.png)
 
 ![Rawspberry IO](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/ULX4M-LD-V2-raspberry_IO.jpg)
-
-![GPIO](https://github.com/intergalaktik/ulx4m-documentation/blob/main/pic/gpio.png)
 
 On this version SD_CARD is aslo connected to GPIO pins, so we can share it with ESP32 as on ULX3S.
 
@@ -91,6 +93,10 @@ If Waveshare IO board is used it can be powered only from USB-C.
 If you are using Raspberry IO board then you will need 12V DC input as micro USB does not have 5V connected.
 There is one wire hack that can provide 5V from USB to the board.
 If this hack is used USB HOST will not work as it will disable HUB chip.
+
+## ULX4M-LD design files
+
+https://github.com/intergalaktik/ulx4m/tree/ulx4m-ls
 
 ### ULX4M-LD v2 schematics
 
@@ -210,3 +216,22 @@ ISSI FLASH should be always safe and reversible.
 Winbond FLASH protection can set non-reversible
 OTP status register lock bit and in that case,
 there is no known way to remove protection.
+
+## Chat and support
+
+Discord chanel
+
+  - https://discord.gg/qwMUk6W (problems/question/general chat)
+
+## INSTRUCTIONS FOR SAFE USE
+
+This product shall be connected to an computer/laptop USB port or external power supply rated at 5V DC with maximum current of 2A.
+Any external power supply used with ULX4M shall comply with relevant regulations and standards applicable in the country of intended use.
+This product should be operated in a well ventilated environment and should not be covered.
+This product should be placed on a stable, flat, non-conductive surface in use and should not be contacted by conductive items. 
+The connection of unapproved devices to any receptacle may affect compliance or results in damage to the unit and invalidate the warranty. Do not expose it to water, moisture or place on a conductive surface whilst in operation
+Do not expose it to heat from any source; ULX4M is designed for reliable operation at normal ambient room temperatures.
+Take care whilst handling to avoid mechanical or electrical damage to the printed circuit board and connectors.
+Avoid handling ULX4M while it is powered. Only handle by the edges to minimize the risk of electrostatic discharge damage.
+All peripherals used with ULX4M should comply with relevant standards for the country of use and be marked accordingly to ensure that safety and performance requirements are met.
+ULX4M requires at least 500mA to function safely.

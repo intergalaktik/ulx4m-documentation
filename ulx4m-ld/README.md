@@ -6,6 +6,8 @@ SPDX-License-Identifier: CERN-OHL-S-2.0
 
 # ULX4M-LD (Lattice + DDR3)
 
+![ulx4m-ld](../pic/ulx4m-ld.png)
+
 ## Introduction
 
 ULX4M-LD (Lattice + DDR3) is a system on a module (SoM) board that can be used on CM4 compatible base board or as a standalone board.

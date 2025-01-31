@@ -6,6 +6,8 @@ SPDX-License-Identifier: CERN-OHL-S-2.0
 
 # ULX4M-LS (Lattice + SDRAM)
 
+![ulx4m-ls](../pic/ulx4m-ls.png)
+
 ## Introduction
 
 ULX4M-LS (Lattice + SDRAM) is a system on a module (SoM) board that can be used on CM4 compatible base board or as a standalone board.

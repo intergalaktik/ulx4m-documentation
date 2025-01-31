@@ -4,41 +4,111 @@ SPDX-FileCopyrightText: 2016 2016 Goran Mahovlic, <goran.mahovlic@gmail.com> et 
 SPDX-License-Identifier: CERN-OHL-S-2.0
 -->
 
-# ULX4M series PCBs
+# ULX4M-LS (Lattice + SDRAM)
 
-[ULX4M] = University digital Logic Learning Xtensible board release 4 Moduler successor of [ULX3S](http://radiona.org/ulx3s) = [University digital Logic](https://www.fer.unizg.hr/en/course/diglog) Learning
-Xtensible board release 3 with SDRAM,
-Successor of [ULX2S](http://github.com/emard/ulx2s).
+## Introduction
 
-### Introduction
+ULX4M-LS (Lattice + SDRAM) is a system on a module (SoM) board that can be used on CM4 compatible base board or as a standalone board.
 
-ULX4M is a system on a module (SoM) board that can be used on CM4 compatible base board or as a standalone board.
-ULX4M has two versions 
+## Features
 
-#### ULX4M-LS (Lattice + SDRAM version) [README](https://github.com/intergalaktik/ulx4m-documentation/ulx4m-ls)
+## ULX4M-LS (Lattice + SDRAM)
 
-#### ULX4M-LD (Lattice + DDR3 version) [README](https://github.com/intergalaktik/ulx4m-documentation/ulx4m-ld)
+FPGA: Lattice ECP5 [LFE5U-12F-6BG381C](http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/ECP5/FPGA-DS-02012.pdf?document_id=50461) (12/25/45/85K LUT)
+
+### Main parts
+
+LFE5U-12F-6BG381C
+
+IS42S16160G-7BL 32 MB SDRAM 
+
+W25Q128JVSIM NOR Flash spiFlash, 3V, 128M-bit, 4Kb Uniform Sector
+
+Ethernet - LAN8720A
+
+### Programming options
+
+External JTAG programming connector
+
+JTAG connected to GPIO (programming with FTDI or ESP32)
+
+USB (bootloader)
+
+### Periferals
+
+- [x] 2 lane CSI camera port  CAM0 and CAM1
+
+- [x] 2 lane DSI display port DISP0 (fake differential)
+
+- [x] DISP0 pins connected to DISP1
+
+- [x] * SerDes pair (TX/RX) connected to 2.0 header (radio experiments)
+
+- [x] True differential GPDI video output
+
+- [x] Fake differential GPDI video output
+
+- [x] 4 bit SD card connection
+
+- [x] * SerDes connected to PCIe 1x 
+
+- [x] * 2x SerDes pairs connected over capacitors to connector
+
+- [x] GPIOs
+
+- [x] 3 Buttons
+
+- [x] 2 DIP SW
+
+- [x] 8 LEDs
+
+* Only available if ECP5 SerDes chip is used
 
 
-### ULX4M repositories
+## Electrical and mechanical specifications
 
-https://github.com/lawrie/ulx4m_examples
+![dimensions](/pic/ulx4m-ld-dimensions.png)
 
-https://github.com/lawrie/ulx4m_amaranth_examples
+## Pinout
 
-https://github.com/emard/ulx3s-misc
+## Power
 
-https://github.com/emard/had2019-playground/tree/master/projects/bootloader
+## ULX4M-LS description and instructions
 
-https://github.com/goran-mahovlic/mipi-csi-2
+Missing
 
-https://github.com/hdl4fpga/hdl4fpga
+## ULX4M-LS description and instructions
 
-### ULX4M-LS v1 bitstreams
+![LD short desc](/pic/ulx4m-ls-short-desc.png)
 
-https://github.com/lawrie/ulx4m_bitstreams
+![Waveshare short desc](/pic/Waveshare-ulx4m-ld-v2-explain.png)
 
-### DFU bootloader for ULX4M 
+![Rawspberry IO](/pic/ULX4M-LD-V2-raspberry_IO.jpg)
+
+![GPIO](/pic/gpio.png)
+
+On this version SD_CARD is aslo connected to GPIO pins, so we can share it with ESP32 as on ULX3S.
+
+On this version FPGA JTAG pins are connected to some GPIO pins so you will not be able to use them as GPIOs, but you can acces JTAG over GPIO.
+
+If Waveshare IO board is used it can be powered only from USB-C.
+
+If you are using Raspberry IO board then you will need 12V DC input as micro USB does not have 5V connected.
+There is one wire hack that can provide 5V from USB to the board.
+If this hack is used USB HOST will not work as it will disable HUB chip.
+
+### ULX4M-LS schematics
+
+https://github.com/intergalaktik/ulx4m/blob/ulx4m-ld/doc/schematics.pdf
+
+### ULX4M-LS LPF
+
+https://github.com/intergalaktik/ulx4m/blob/ulx4m-ls/doc/constraints/prototype/ulx4m-ld_v002.lpf
+
+
+### JTAG over GPIO
+
+### DFU bootloader for ULX4M-LS
 
 USB DFU at US1 port for FPGA flashing.
 DFU is very fast.
@@ -58,7 +128,7 @@ In bootloader mode, LEDs 0-2 should be ON, other LEDs 3-7 OFF:
 |&#x2b1b;|&#x2b1b;|&#x2b1b;|&#x2b1b;|&#x2b1b;|&#x1f7e9;|&#x1f7e7;|&#x1f7e5;|
 
     lsusb
-    Bus 001 Device 117: ID 1d50:614b OpenMoko, Inc. ULX4M-LD(DFU)
+    Bus 001 Device 117: ID 1d50:614b OpenMoko, Inc. ULX4M-LS(DFU)
 
 On linux, it's practical to add a udev rule which allows normal users
 members of "dialout" group to also run dfu-util,

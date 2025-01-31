@@ -81,12 +81,15 @@ Missing
 
 ## ULX4M-LS description and instructions
 
+NEEDS UPDATE!!!
 ![LD short desc](../pic/ulx4m-ls-short-desc.png)
 
+NEEDS UPDATE!!!
 ![Waveshare short desc](../pic/Waveshare-ulx4m-ld-v2-explain.png)
 
-![Rawspberry IO](../pic/ULX4M-LD-V2-raspberry_IO.jpg)
+![Rawspberry IO](../pic/ulx4m-ls-v003-rpi-io_03_crop.jpg)
 
+NEEDS UPDATE!!!
 ![GPIO](../pic/gpio.png)
 
 On this version SD_CARD is aslo connected to GPIO pins, so we can share it with ESP32 as on ULX3S.
@@ -101,11 +104,11 @@ If this hack is used USB HOST will not work as it will disable HUB chip.
 
 ### ULX4M-LS schematics
 
-https://github.com/intergalaktik/ulx4m/blob/ulx4m-ld/doc/schematics.pdf
+https://github.com/intergalaktik/ulx4m/blob/ulx4m-ls/doc/schematics.pdf
 
 ### ULX4M-LS LPF
 
-https://github.com/intergalaktik/ulx4m/blob/ulx4m-ls/doc/constraints/prototype/ulx4m-ld_v002.lpf
+https://github.com/intergalaktik/ulx4m/blob/ulx4m-ls/doc/constraints/prototype/ulx4m_ls_v003.lpf
 
 
 ### JTAG over GPIO

@@ -10,9 +10,130 @@ SPDX-License-Identifier: CERN-OHL-S-2.0
 Xtensible board release 3 with SDRAM,
 Successor of [ULX2S](http://github.com/emard/ulx2s).
 
+### Introduction
+
+ULX4M is a system on a module (SoM) board that can be used on CM4 compatible base board or as a standalone board.
+ULX4M has two versions ULX4M-LS (Lattice + SDRAM version) and ULX4M-LD (Lattice + DDR3 version)
+
+## Features
+
 ## ULX4M-LS (Lattice + SDRAM version)
 
+FPGA: Lattice ECP5 [LFE5U-12F-6BG381C](http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/ECP5/FPGA-DS-02012.pdf?document_id=50461) (12/25/45/85K LUT)
+
+### Main parts
+
+LFE5U-12F-6BG381C
+
+IS42S16160G-7BL 32 MB SDRAM 
+
+W25Q128JVSIM NOR Flash spiFlash, 3V, 128M-bit, 4Kb Uniform Sector
+
+Ethernet - LAN8720A
+
+### Programming options
+
+External JTAG programming connector
+
+JTAG connected to GPIO (programming with FTDI or ESP32)
+
+USB (bootloader)
+
+### Periferals
+
+- [x] 2 lane CSI camera port  CAM0 and CAM1
+
+- [x] 2 lane DSI display port DISP0 (fake differential)
+
+- [x] DISP0 pins connected to DISP1
+
+- [x] * SerDes pair (TX/RX) connected to 2.0 header (radio experiments)
+
+- [x] True differential GPDI video output
+
+- [x] Fake differential GPDI video output
+
+- [x] 4 bit SD card connection
+
+- [x] * SerDes connected to PCIe 1x 
+
+- [x] * 2x SerDes pairs connected over capacitors to connector
+
+- [x] GPIOs
+
+- [x] 3 Buttons
+
+- [x] 2 DIP SW
+
+- [x] 8 LEDs
+
+* Only available if ECP5 SerDes chip is used
+
 ## ULX4M-LD (Lattice + DDR3 version)
+
+FPGA: Lattice ECP5 [LFE5U-85F-6BG381C](http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/ECP5/FPGA-DS-02012.pdf?document_id=50461) (12/25/45/85K LUT)
+
+### Main parts
+
+LFE5UM-85F-8BG381C
+
+MT41K256M16TW-107 512MB DDR3
+
+W25Q128JVSIM NOR Flash spiFlash, 3V, 128M-bit, 4Kb Uniform Sector
+
+Ethernet - KSZ9031RNXCA
+
+### Programming options
+
+External JTAG programming connector
+
+JTAG connected to GPIO (programming with FTDI or ESP32)
+
+USB (bootloader)
+
+### Periferals
+
+- [x] 2 lane CSI camera port  CAM0 and CAM1
+
+- [x] 2 lane DSI display port DISP0 (fake differential)
+
+- [x] SerDes pair connected to second DSI connector DISP1
+
+- [x] SerDes pair (TX/RX) connected to 2.0 header (radio experiments)
+
+- [x] True differential GPDI video output
+
+- [x] Fake differential GPDI video output
+
+- [x] SD card connection - shared with HAT pins
+
+- [x] SerDes connected to PCIe 1x 
+
+- [x] 2x SerDes pairs connected over capacitors to connector
+
+- [x] GPIOs
+
+- [x] 3 Buttons
+
+- [x] 2 DIP SW
+
+- [x] 8 LEDs
+
+## Electrical and mechanical specifications
+
+![dimensions](/pic/ulx4m-ld-dimensions.png)
+
+## Pinout
+
+## Power
+
+
+
+## ULX4M-LS description and instructions
+
+Missing
+
+## ULX4M-LD description and instructions
 
 ![LD short desc](/pic/ulx4m-ld-short-desc.png)
 

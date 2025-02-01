@@ -214,7 +214,7 @@ Winbond FLASH protection can set non-reversible
 OTP status register lock bit and in that case,
 there is no known way to remove protection.
 
-# Chat and support
+## Chat and support
 
 Discord chanel
 

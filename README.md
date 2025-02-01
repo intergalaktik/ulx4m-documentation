@@ -132,3 +132,13 @@ ISSI FLASH should be always safe and reversible.
 Winbond FLASH protection can set non-reversible
 OTP status register lock bit and in that case,
 there is no known way to remove protection.
+
+## ULX4M batch tester
+
+https://github.com/intergalaktik/ULX4M-tester
+
+## Chat and support
+
+Discord chanel
+
+  - https://discord.gg/qwMUk6W (problems/question/general chat)

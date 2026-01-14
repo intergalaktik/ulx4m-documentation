@@ -14,7 +14,7 @@ ULX4M-LD (Lattice + DDR3) is a system on a module (SoM) board that can be used o
 
 ## ULX4M-LD (Lattice + DDR3)
 
-FPGA: Lattice ECP5 [LFE5U-85F-6BG381C](http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/ECP5/FPGA-DS-02012.pdf?document_id=50461) (12/25/45/85K LUT)
+FPGA: Lattice ECP5 [LFE5U-85F-6BG381C]([http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/ECP5/FPGA-DS-02012.pdf?document_id=50461](https://www.latticesemi.com/view_document?document_id=50461)) (12/25/45/85K LUT)
 
 ### Main parts
 
